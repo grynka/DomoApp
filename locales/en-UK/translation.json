@@ -1,0 +1,21 @@
+{
+  "login": "login",
+  "password": "password",
+  "signIn": "sign In",
+  "check": "check",
+  "language": "Language",
+  "welcome": "welcome",
+  "My Domonet": "My Domonet",
+  "login to": "Login to ",
+  "Error": "Error",
+  "Login Error": "Login Error",
+  "Something went wrong. Please try again.": "Something went wrong. Please try again.",
+  "Please fill in both fields": "Please fill in both fields",
+  "Forgot password?": "Forgot password?",
+  "Reset": "Reset",
+  "name": "name",
+  "balance": "Balance",
+  "internet": "Internet",
+  "tv": "TV",
+  "ip": "IP Address"
+}

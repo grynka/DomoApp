@@ -1,36 +1,63 @@
 {
   "expo": {
     "name": "DomoApp",
-    "slug": "DomoApp",
+    "slug": "domoapp",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/BigLogo.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./assets/images/BigLogo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "androidStatusBar": {
+      "backgroundColor": "#FFFFFF",
+      "translucent": false
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "newArchEnabled": true,
+      "bundleIdentifier": "com.grynka.domoapp"
     },
     "android": {
+      "newArchEnabled": true,
+      "softwareKeyboardLayoutMode": "pan",
+      "permissions": [],
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/BigLogo.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.grynka.domoapp"
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/BigLogo.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/BigLogo.png",
+          "color": "#ffffff",
+          "defaultChannel": "default"
+        }
+      ],
+      "expo-secure-store",
+      "expo-localization",
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "13ab5313-e5e1-40e9-96ba-d7349502a842"
+      }
+    },
+    "owner": "grynka"
   }
 }
