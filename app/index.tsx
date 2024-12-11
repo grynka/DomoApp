@@ -25,6 +25,7 @@ const Index = () => {
           hasOnboarded || (await SecureStore.getItemAsync("hasOnboarded"));
         if (onboarded) {
           router.push("/(auth)/signIn");
+          console.log("попал на индекс");
         } else {
           router.push("/(auth)/onbording");
         }

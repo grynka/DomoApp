@@ -39,7 +39,8 @@ const Profile = () => {
 
   const handleLogout = async () => {
     await logout(); // Выполнение логина
-    router.push("/"); // Навигация на экран входа
+    router.push("/test"); // Навигация на экран входа
+    console.log("вышел");
   };
 
   return (
